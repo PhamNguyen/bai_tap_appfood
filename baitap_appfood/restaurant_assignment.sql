@@ -1,14 +1,3 @@
--- =========================================================
--- CYBERSOFT SQL ASSIGNMENT - PostgreSQL
--- Run CREATE DATABASE separately, then connect to restaurant_db
--- and execute the rest of this file.
--- =========================================================
-
--- 1. CREATE DATABASE
--- Run this statement separately (outside a transaction):
--- CREATE DATABASE restaurant_db;
-
--- 2. TABLES
 
 CREATE TABLE users (
     user_id SERIAL PRIMARY KEY,
@@ -175,15 +164,7 @@ AND NOT EXISTS (
     SELECT 1 FROM rate_res rr WHERE rr.user_id = u.user_id
 );
 
--- 5. OPTIONAL: VERIFY TABLE DATA
--- SELECT * FROM users;
--- SELECT * FROM restaurant;
--- SELECT * FROM food_type;
--- SELECT * FROM food;
--- SELECT * FROM sub_food;
--- SELECT * FROM orders;
--- SELECT * FROM like_res;
--- SELECT * FROM rate_res;
+
 
 -- 1. Top 5 người like nhà hàng nhiều nhất
 SELECT 
